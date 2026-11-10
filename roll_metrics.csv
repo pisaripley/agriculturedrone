@@ -1,0 +1,2 @@
+Kp,Ki,Kd,wind_m_s,gust_m_s,gust_torque_Nm,overshoot_pct,rise_time_s,settling_time_5pct_s,max_gust_deviation_deg,peak_motor_torque_Nm,saturated
+0.3,0.6,0.03,1.43,2.0,-0.0001,76.43,0.144,1.462,3.138,0.0871,False

@@ -1,0 +1,29 @@
+FLIGHT SUMMARY
+============================================================
+
+CONDITIONS
+  Wind: 2 mph, gusting to 3 mph, coming from the north-east (live wind for Phoenix, Arizona, United States (Open-Meteo)).
+  Your drone faces north, so the wind hits it partly from the side.
+
+YOUR DRONE
+  650 g, 250 mm across, 5 cm tall.
+  Autopilot style: Balanced (Kp 0.5, Ki 0.3, Kd 0.08).
+
+WHAT HAPPENED
+  You asked for a 20° tilt. The drone swung to 22° before coming back (9% too far) — very smooth.
+  It got most of the way there in 0.17 seconds and settled within 1.4 seconds.
+  When the 3 mph gust hit, it was pushed up to 0.9° off target — barely moved.
+  Motors used up to 24% of their strength.
+
+RECOMMENDATION
+  For this wind, the steadiest settings tested were Kp 0.8, Ki 0.3, Kd 0.1:
+  about 6% overshoot (vs 9% now) and 0.6° gust push (vs 0.9° now).
+
+IMPORTANT: this is a simplified computer model of one tilt direction. Use it to compare
+settings, then test changes carefully, low and slow, on the real drone.
+
+FILES
+  roll_sim.png      graphs of this flight
+  gain_sweep.png    how other autopilot settings would handle this wind
+  roll_sim.csv      the flight data, 100 rows per second
+  gain_sweep.csv    scores for every setting tried
